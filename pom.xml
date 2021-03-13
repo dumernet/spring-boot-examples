@@ -12,6 +12,7 @@
     <modules>
         <module>spring-boot-command-line-runner</module>
         <module>spring-boot-application-runner</module>
+        <module>spring-boot-value-annotation</module>
     </modules>
 
     <properties>
