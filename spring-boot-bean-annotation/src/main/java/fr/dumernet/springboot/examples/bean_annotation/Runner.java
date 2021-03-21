@@ -1,15 +1,13 @@
 package fr.dumernet.springboot.examples.bean_annotation;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
+@Slf4j
 public class Runner implements CommandLineRunner {
-
-    private static final Logger logger = LoggerFactory.getLogger(Runner.class);
 
     private final String createStringFoo;
 
@@ -32,11 +30,11 @@ public class Runner implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        logger.info(createStringFoo);
-        logger.info(createStringBar);
-        logger.info(doubleValue.toString());
-        logger.info(floatOne.toString());
-        logger.info(floatTwo.toString());
+        log.info(createStringFoo);
+        log.info(createStringBar);
+        log.info(doubleValue.toString());
+        log.info(floatOne.toString());
+        log.info(floatTwo.toString());
     }
 
 }

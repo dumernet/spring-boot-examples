@@ -3,15 +3,13 @@ package fr.dumernet.springboot.examples.properties_annotation;
 import fr.dumernet.springboot.examples.properties_annotation.properties.BeanPerson;
 import fr.dumernet.springboot.examples.properties_annotation.properties.Person;
 import fr.dumernet.springboot.examples.properties_annotation.properties.PersonList;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
+@Slf4j
 public class Runner implements CommandLineRunner {
-
-    private static final Logger logger = LoggerFactory.getLogger(Runner.class);
 
     private final Person person;
 
@@ -30,10 +28,10 @@ public class Runner implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        logger.info("{}", person);
-        logger.info("{}", personList);
-        logger.info("{}", beanFirstPerson);
-        logger.info("{}", beanSecondPerson);
+        log.info("{}", person);
+        log.info("{}", personList);
+        log.info("{}", beanFirstPerson);
+        log.info("{}", beanSecondPerson);
     }
 
 }
