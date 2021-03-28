@@ -15,6 +15,7 @@
         <module>spring-boot-value-annotation</module>
         <module>spring-boot-bean-annotation</module>
         <module>spring-boot-properties-annotation</module>
+        <module>spring-boot-lombok-mapstruct</module>
     </modules>
 
     <properties>
