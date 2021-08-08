@@ -10,12 +10,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-boot-command-line-runner</module>
-        <module>spring-boot-application-runner</module>
-        <module>spring-boot-value-annotation</module>
-        <module>spring-boot-bean-annotation</module>
-        <module>spring-boot-properties-annotation</module>
-        <module>spring-boot-lombok-mapstruct</module>
+        <module>spring-boot-runner</module>
+        <module>spring-boot-core</module>
+        <module>spring-boot-caching</module>
     </modules>
 
     <properties>
@@ -30,14 +27,14 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.4.2</version>
+                <version>2.5.3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>2020.0.1</version>
+                <version>2020.0.3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
