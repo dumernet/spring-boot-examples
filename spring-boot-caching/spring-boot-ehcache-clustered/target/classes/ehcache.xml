@@ -1,0 +1,38 @@
+<config xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns='http://www.ehcache.org/v3'
+        xmlns:terracotta='http://www.ehcache.org/v3/clustered'
+        xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.7.xsd">
+
+    <service>
+        <terracotta:cluster>
+            <terracotta:connection url="terracotta://localhost:9410/clustered" />
+            <terracotta:server-side-config auto-create="true">
+                <terracotta:default-resource from="default-resource" />
+            </terracotta:server-side-config>
+        </terracotta:cluster>
+    </service>
+
+    <cache-template name="default">
+        <expiry>
+            <ttl unit="seconds">2</ttl>
+        </expiry>
+        <listeners>
+            <listener>
+                <class>fr.dumernet.springboot.examples.ehcache_clustered.listener.CacheEventLogger</class>
+                <event-firing-mode>ASYNCHRONOUS</event-firing-mode>
+                <event-ordering-mode>ORDERED</event-ordering-mode>
+                <events-to-fire-on>CREATED</events-to-fire-on>
+                <events-to-fire-on>UPDATED</events-to-fire-on>
+                <events-to-fire-on>REMOVED</events-to-fire-on>
+                <events-to-fire-on>EVICTED</events-to-fire-on>
+                <events-to-fire-on>EXPIRED</events-to-fire-on>
+            </listener>
+        </listeners>
+        <resources>
+            <terracotta:clustered-dedicated unit="MB">5</terracotta:clustered-dedicated>
+        </resources>
+    </cache-template>
+
+    <cache alias="person" uses-template="default" />
+    <cache alias="person2" uses-template="default" />
+
+</config>

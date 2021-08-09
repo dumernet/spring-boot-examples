@@ -10,7 +10,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-boot-ehcache</artifactId>
+    <artifactId>spring-boot-ehcache-clustered</artifactId>
 
     <dependencies>
         <dependency>
@@ -28,6 +28,12 @@
         <dependency>
             <groupId>org.ehcache</groupId>
             <artifactId>ehcache</artifactId>
+            <version>3.8.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache-clustered</artifactId>
+            <version>3.8.1</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
