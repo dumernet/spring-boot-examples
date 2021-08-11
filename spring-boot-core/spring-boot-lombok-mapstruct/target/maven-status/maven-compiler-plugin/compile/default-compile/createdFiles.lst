@@ -1,8 +1,0 @@
-fr\dumernet\springboot\examples\lombok_mapstruct\mapper\PersonMapperImpl.class
-fr\dumernet\springboot\examples\lombok_mapstruct\dto\PersonDto$PersonDtoBuilder.class
-fr\dumernet\springboot\examples\lombok_mapstruct\mapper\PersonMapper.class
-fr\dumernet\springboot\examples\lombok_mapstruct\dto\PersonDto.class
-fr\dumernet\springboot\examples\lombok_mapstruct\LombokMapStructApplication.class
-fr\dumernet\springboot\examples\lombok_mapstruct\Runner.class
-fr\dumernet\springboot\examples\lombok_mapstruct\model\Person$PersonBuilder.class
-fr\dumernet\springboot\examples\lombok_mapstruct\model\Person.class
