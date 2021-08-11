@@ -1,4 +1,4 @@
-package fr.dumernet.springboot.examples.ehcache.model;
+package fr.dumernet.springboot.examples.redis.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
