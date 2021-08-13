@@ -16,7 +16,10 @@ public class PersonService {
     @Cacheable
     public Person findById(long id) {
         log.info("findById {}", id);
-        return Person.builder().id(id).name("person_" + id).build();
+        return Person.builder().id(id)
+                .firstName("firstName_" + id)
+                .lastName("lastName_" + id)
+                .build();
     }
 
     @CacheEvict(allEntries = true)
@@ -32,7 +35,10 @@ public class PersonService {
     @CachePut
     public Person updateById(long id) {
         log.info("updateById {}", id);
-        return Person.builder().id(id).name("person_v2_" + id).build();
+        return Person.builder().id(id)
+                .firstName("firstName_v2_" + id)
+                .lastName("lastName_v2_" + id)
+                .build();
     }
 
 }

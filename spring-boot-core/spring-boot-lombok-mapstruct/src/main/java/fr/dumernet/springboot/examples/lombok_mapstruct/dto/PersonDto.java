@@ -13,6 +13,8 @@ import java.io.Serializable;
 @Builder
 public class PersonDto implements Serializable {
 
-    private String name;
+    private String firstName;
+
+    private String lastName;
 
 }

@@ -1,4 +1,4 @@
-package fr.dumernet.springboot.examples.bean_annotation;
+package fr.dumernet.springboot.examples.bean_annotation.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;

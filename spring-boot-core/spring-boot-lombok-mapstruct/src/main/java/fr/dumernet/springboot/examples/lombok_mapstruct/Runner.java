@@ -19,8 +19,8 @@ public class Runner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        log.info("{}", personMapper.toDto(Person.builder().name("Foo").build()));
-        log.info("{}", personMapper.toModel(PersonDto.builder().name("Bar").build()));
+        log.info("{}", personMapper.toDto(Person.builder().firstName("firstName").lastName("lastName").build()));
+        log.info("{}", personMapper.toModel(PersonDto.builder().firstName("firstName").lastName("lastName").build()));
     }
 
 }

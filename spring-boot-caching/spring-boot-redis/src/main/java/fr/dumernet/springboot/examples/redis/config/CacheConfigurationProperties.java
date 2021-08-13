@@ -1,4 +1,4 @@
-package fr.dumernet.springboot.examples.redis;
+package fr.dumernet.springboot.examples.redis.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
