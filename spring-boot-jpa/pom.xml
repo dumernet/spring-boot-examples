@@ -15,6 +15,7 @@
 
     <modules>
         <module>spring-boot-jpa-single-entity</module>
+        <module>spring-boot-jpa-one-to-many</module>
     </modules>
 
 </project>
